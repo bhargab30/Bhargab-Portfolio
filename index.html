@@ -8,18 +8,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 1320px)" href="css/query.css">
 
 	<link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<div class="box"></div>
 	<div class="vl"></div>
 	<div class="icons">
-		<div class="flex flex-col justify-center items-center">
+		
 			<a href="mailto:bhargabsarmah30@gmail.com">
 				<img src="images/email.png" alt="email" class="email">
 			</a>
@@ -38,28 +40,28 @@
 		
 		
 		<div class="container">
-			<nav class="flex items-center justify-between ">
+			<input type="checkbox" id="click">
+			<label for="click" class="menu">
+				<div class="toggle">
+					<img src="images/bar.png" alt="" class="tog_bar">
+				</div>
+			</label>
+			
+			<nav >
+				
+				
 				<div class="left">
-
 					<a id="Home" href="#">Home</a>
 					<a href="#about">About</a>
 					<a href="#projects">Projects</a>
 					<a href="#sketches">Sketches</a>
-					
+					<a href="#connect">Contact</a>
 				</div>
-
-				<div class="right">
-					<a href="#connect">
-						<button class="btn btn-primary">Contact</button>
-					</a>
-					
-				</div>
-
-
+				
 			</nav>
 
-			<div class="bhargab flex items-center">
-				<div class="left">
+			<div class="bhargab">
+				<div class="left ">
 					<img src="images/bhargab.jpg" alt="">
 					<div class="img_overlay">
 						<div class="img_title"><strong>Bhargab Sarmah</strong></div>
@@ -67,15 +69,17 @@
 						<p class="addrs">Dibrugarh, Assam, India</p>
 					</div>
 				</div>
-				<div class="right">
-					<h6>Hey, I'm Bhargab Sarmah</h6>
+				<div class="right flex-1">
+					<h6>Hey,<br>I'm Bhargab Sarmah</h6>
 					<p>Welcome to my personal website, here you will have all the necessary information about me, my work, my hobbies and what makes me unique as a person. Always focused on creating remarkable experiences and amazing impressions through software development... anytime, anywhere.</p><br>
 
 					<button class="btn btn-secondary">Download Resume</button>
 				</div>
+
 			</div>
+			
 		</div>
-		<div class="vl1"></div>
+		
 	</header>
 
 	<section id="about" class="about">
@@ -101,7 +105,7 @@ Connect with me in my social handles.
 		<img src="images/circular.png" alt="" class="rotate">
 	</section>
 
-	<div id="projects" class="projects flex">
+	<div id="projects" class="projects">
 		<div class="left">
 
 			<h6>Let's walk through the projects!</h6><br>
@@ -135,10 +139,10 @@ Connect with me in my social handles.
 		
 	</div>
 
-	<div class="sketches flex">
+	<div class="sketches">
 		
 		<div class="right">
-			<div class="hobbie-list flex flex-col">
+			<div class="hobbie-list">
 				<div class="hob1">
 					<h3>Websites</h3>
 					<p>Always ready to learn new things, so started web development and now it's my favourite.</p>
@@ -177,7 +181,7 @@ Connect with me in my social handles.
 		
 	</div>
 	<div id="sketches" class="drawings">
-		<div class="draw_grid justify-center">
+		<div class="draw_grid">
 			<div class="pic1">
 				<img src="images/pic1.png">
 			</div>
@@ -198,16 +202,13 @@ Connect with me in my social handles.
 				<img src="images/pic6.png">
 			</div>
 			<div class="pic7">
-				
-			</div>
-			<div class="pic7">
 				<img src="images/pic7.png">
 			</div>
 			
 		</div>
 	</div>
 	
-	<div id="connect" class="connect flex">
+	<div id="connect" class="connect">
 		<div>
 			<h1>Let's Connect </h1>
 			<p>Through <br><span>Social Media</span></p>
@@ -226,6 +227,8 @@ Connect with me in my social handles.
 		<div class="hl2"></div>
 
 	</div>
+	
+	
 	
 	
 </body>
