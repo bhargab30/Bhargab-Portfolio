@@ -1,6 +1,11 @@
 @import 'utilities.css';
 
 
+#click{
+	display: none;
+}
+
+
 
 :root{
 	--primary:#3DCFD3;
@@ -12,13 +17,20 @@
 
 body{
 	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden;
+	
 	background-color: #161626;
 	
 }
 
-html{
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 
@@ -31,15 +43,19 @@ html{
 
 header{
 	background: #161619;
-	height: 600px;
+	height: 650px;
+
 	clip-path: polygon(0 0,100% 0, 100% 100%,70% 87%,0 100%);
 }
 .icons{
 	margin-top: 200px;
 	margin-left: 15px;
 	position: fixed;
-
 	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .icons img{
 	background: transparent;
@@ -56,28 +72,51 @@ header{
 }
 
 .container{
-	max-width: 60%;
+	max-width: 1152px;
 	padding: 0 15px;
-	margin: 0 300px;
+	margin: 0 auto;
 	background: #161619;
+
+}
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	background-color: #161619;
+	display: none;
+
+
+}
+.tog_bar{
+	width: 23px;
+	cursor: pointer;
+}
+
+header nav{
+	margin-left: 150px;
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
 }
 
 
-
-header nav .left a{
+header .left a{
 	color: white;
 	text-decoration: none;
 	margin-right: 2rem;
 	text-transform: uppercase;
 	transition: all .3s ease;
+
+	
 }
-header nav .left a:hover{
+header .left a:hover{
 	color: var(--primary);
 }
 
-header nav{
-	padding: 2rem 0;
-}
+
 
 
 
@@ -86,9 +125,16 @@ header nav{
 	border-radius: 400px;
 	
 }
+.bhargab{
+	display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+}
 
 .bhargab .left{
 	margin-top: 10px;
+	margin-left: 150px;
 	height:400px;
 	padding: 10px 10px;
 	border-radius: 10px;
@@ -115,34 +161,33 @@ header nav{
 .box {
   width: 82px;
   background-color: #161619;
-  height: 690px;
+  height: 100%;
   position: fixed;
   top: 0;
   z-index: 98;
 }
 
-.vl1 {
-margin-top: 200px;
-  border-left: 3px solid white;
-  height: 400px;
-  position: absolute;
-  
-  margin-left: 1280px;
-  top: 0;
-}
+
 
 
 .bhargab .right{
 	color:white;
-	margin-left: 50px;
+	margin:0 50px;
+	
+	
 	
 }
 .bhargab .right h6{
 	
-	font-size: 1.68rem;
-	margin-bottom: 20px;
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
 	color: var(--primary);
 	
+}
+
+.bhargab .right p{
+	line-height: 1.9;
+	margin-bottom: 2rem;
 }
 
 
@@ -157,22 +202,23 @@ margin-top: 200px;
 }
 
 .img_title{
-	font-size: 1.4em;
+	font-size: 23px;
 	font-weight: 900px;
 	color: white;
 	
 }
 
 .descrp{
-	font-size: .83em;
+	font-size: 13px;
 }
 .addrs{
-	font-size: .8em;
+	font-size: 13px;
 	color: #ccffff;
 }
 
 section{
 	height: 600px;
+
 }
 
 .about .rotate {
@@ -199,8 +245,8 @@ section{
 }
 
 .about h1{
-	margin-bottom: 1rem;
-	font-size: 1.6rem;
+	margin-bottom: 18px;
+	font-size: 27px;
 	color: white;
 
 }
@@ -210,8 +256,8 @@ section{
 }
 
 .about h3{
-	margin-bottom: 1rem;
-	font-size: 1rem;
+	margin-bottom: 15px;
+	font-size: 16px;
 	font-weight: 400;
 	color: white;
 }
@@ -229,6 +275,7 @@ section{
 
 .projects{
 	height: 600px;
+	display: flex;
 }
 .projects .left{
 	padding-left: 150px;
@@ -317,6 +364,8 @@ section{
 .hobbie-list{
 	position: relative;
 	left: 100px;
+	display: flex;
+	flex-direction: column;
 
 }
 
@@ -368,12 +417,14 @@ section{
 .sketches{
 	margin-top: 50px;
 	height: 650px;
+	display: flex;
 }
 
 .sketches .left{
 	margin-left:300px;
 	margin-top: 80px;
 }
+
 
 .hobbie-list h3{
 	font-size: 25px;
@@ -461,9 +512,10 @@ section{
 	
 	display: grid;
 	height: 1000px;
+	justify-content: center;
 	grid-template-columns: repeat(3,0.3fr);
 	grid-auto-rows: 400px;
-	grid-gap: 4em;
+	grid-gap: 52px;
 }
 
 
@@ -484,6 +536,7 @@ section{
 	height:450px;
 	margin-left: 250px;
 	margin-top: 100px;
+	display: flex;
 }
 .connect h1{
 	line-height: 0.82;
@@ -559,5 +612,6 @@ section{
   	margin-top:-12px;
   	z-index: 99;
 }
+
 
 
