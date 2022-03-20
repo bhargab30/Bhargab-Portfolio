@@ -1,8 +1,10 @@
+
+
 #click{
-	display:none;
+	display: none;
 }
 
-@media (max-width: 426px){
+@media only screen and (max-width: 426px){
 	header{
 		height: 730px;
 
@@ -37,7 +39,7 @@
 	}
 
 	.toggle{
-		display: initial;
+		display: block;
 	}
 
 	header nav .left{
@@ -335,3 +337,6 @@
 
 
 }
+
+
+
