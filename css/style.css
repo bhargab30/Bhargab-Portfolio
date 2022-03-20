@@ -90,6 +90,7 @@ header{
 }
 .tog_bar{
 	width: 23px;
+	margin-top:10px;
 	cursor: pointer;
 }
 
