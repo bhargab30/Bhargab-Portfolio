@@ -90,7 +90,6 @@ header{
 }
 .tog_bar{
 	width: 23px;
-	
 	cursor: pointer;
 }
 
@@ -613,6 +612,4 @@ section{
   	margin-top:-12px;
   	z-index: 99;
 }
-
-
 
