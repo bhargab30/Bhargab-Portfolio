@@ -37,7 +37,7 @@
 	}
 
 	.toggle{
-		display: block;
+		display: initial;
 	}
 
 	header nav .left{
