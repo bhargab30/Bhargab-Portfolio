@@ -41,17 +41,13 @@
 	.toggle{
 		display: block;
 	}
-	
-	.tog_bar{
-		display: block;
-	}
 
 	header nav .left{
 		text-align: center;
 		position: fixed;
 		left: 0%;
 		width: 100vw;
-		background-color: #161619;
+		background-color: red;
 		height: 100vh;
 		top:-100%;
 		z-index: 90;
