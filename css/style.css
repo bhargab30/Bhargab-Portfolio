@@ -83,7 +83,7 @@ header{
 	width: 100%;
 	padding: 10px 20px;
 	text-align: right;
-	background-color: red;
+	background-color: #161619;
 	display: none;
 
 
@@ -91,7 +91,7 @@ header{
 .tog_bar{
 	width: 23px;
 	cursor: pointer;
-	display:none;
+	
 }
 
 header nav{
