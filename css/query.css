@@ -47,9 +47,9 @@
 		position: fixed;
 		left: 0%;
 		width: 100vw;
-		background-color: red;
+		background-color: #161619;
 		height: 100vh;
-		top:-100%;
+		top:-300%;
 		z-index: 90;
 
 	}
