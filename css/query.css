@@ -41,6 +41,10 @@
 	.toggle{
 		display: block;
 	}
+	
+	.tog_bar{
+		display: block;
+	}
 
 	header nav .left{
 		text-align: center;
